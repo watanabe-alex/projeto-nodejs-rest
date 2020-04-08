@@ -6,7 +6,7 @@ module.exports = app => {
         Atendimento.lista(res);
     });
 
-    app.get('/atendimentos/:id', (req, res) => {
+    app.get('/atendimento/:id', (req, res) => {
         const id = parseInt(req.params.id);
         Atendimento.buscaPorId(id,res);
     });
