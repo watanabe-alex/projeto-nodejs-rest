@@ -5,7 +5,7 @@ const executaQuery = (query, parametros = '') => {
     return new Promise((resolve, reject) => {
 
         conexao.query(query, parametros, (erros, resultados, campos) => {
-            if (erro) {
+            if (erros) {
                 reject(erros);
             } else {
                 resolve(resultados);
@@ -15,3 +15,5 @@ const executaQuery = (query, parametros = '') => {
     });
     
 };
+
+module.exports = executaQuery;

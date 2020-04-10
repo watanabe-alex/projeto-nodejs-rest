@@ -1,9 +1,9 @@
 //responsabilidade desse arquivo é subir o servidor no ar
 const customExpress = require('./config/customExpress');
 
-const conexao = require('./infraestrutura/conexao');
+const conexao = require('./infraestrutura/database/conexao');
 
-const Tabelas = require('./infraestrutura/tabelas');
+const Tabelas = require('./infraestrutura/database/tabelas');
 
 
 //conecta com o banco de dados
